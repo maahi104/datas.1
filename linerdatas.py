@@ -1,19 +1,19 @@
 # QUESTION 1
-# def find_pairs(arr, target_sum):
-#     pairs = []
-#     for i in range(len(arr)):
-#         for j in range(i+1, len(arr)):
-#             if arr[i] + arr[j] == target_sum:
-#                 pairs.append((arr[i], arr[j]))
+def find_pairs(arr, target_sum):
+    pairs = []
+    for i in range(len(arr)):
+        for j in range(i+1, len(arr)):
+            if arr[i] + arr[j] == target_sum:
+                pairs.append((arr[i], arr[j]))
             
-#     return pairs
+    return pairs
 
-# arr = input("Enter a list of integers, separated by spaces: ").split()
-# arr = [int(x) for x in arr]
-# target_sum = int(input("Enter a target sum: "))
+arr = input("Enter a list of integers, separated by spaces: ").split()
+arr = [int(x) for x in arr]
+target_sum = int(input("Enter a target sum: "))
 
-# result = find_pairs(arr, target_sum)
-# print(result)
+result = find_pairs(arr, target_sum)
+print(result)
 
 
 
